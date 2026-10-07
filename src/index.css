@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@keyframes pet-jump {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  30% {
+    transform: translateY(-24px) scale(1.1) rotate(4deg);
+  }
+  60% {
+    transform: translateY(-8px) scale(1.04) rotate(-2deg);
+  }
+}
+
+@keyframes float-food {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.6) rotate(-10deg);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-12px) scale(1.2) rotate(5deg);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(-38px) scale(1) rotate(-5deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-56px) scale(0.8) rotate(0deg);
+  }
+}
+
+@keyframes fire-aura {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.88;
+    filter: drop-shadow(0 0 16px rgba(245, 158, 11, 0.85)) drop-shadow(0 0 28px rgba(239, 68, 68, 0.7));
+  }
+  33% {
+    transform: scale(1.08) rotate(2deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 24px rgba(239, 68, 68, 0.95)) drop-shadow(0 0 38px rgba(245, 158, 11, 0.8));
+  }
+  66% {
+    transform: scale(1.04) rotate(-2deg);
+    opacity: 0.92;
+    filter: drop-shadow(0 0 20px rgba(251, 191, 36, 0.9)) drop-shadow(0 0 32px rgba(220, 38, 38, 0.75));
+  }
+}
+
+@keyframes pet-shiver {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  75% {
+    transform: translateX(2px) rotate(1deg);
+  }
+}
+
+@keyframes gold-sparkle {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px #ffd700) drop-shadow(0 0 20px #f59e0b);
+  }
+  50% {
+    filter: drop-shadow(0 0 22px #ffedd5) drop-shadow(0 0 32px #eab308) brightness(1.15);
+  }
+}
+
+.animate-pet-jump {
+  animation: pet-jump 0.65s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.animate-float-food {
+  animation: float-food 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.animate-fire-aura {
+  animation: fire-aura 1.5s ease-in-out infinite;
+}
+
+.animate-pet-shiver {
+  animation: pet-shiver 0.4s ease-in-out infinite;
+}
+
+.animate-gold-sparkle {
+  animation: gold-sparkle 2s ease-in-out infinite;
+}

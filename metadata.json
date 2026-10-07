@@ -1,0 +1,8 @@
+{
+  "name": "The Ultimate AT Reviewer - Auditing Theory Interactive Quiz",
+  "description": "Comprehensive interactive reviewer and quiz for CPA candidates covering Auditing Theory (AT-01 to AT-15) based on The Ultimate AT Reviewer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
